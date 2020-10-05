@@ -15,6 +15,13 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { ActionsComponent } from './components/actions/actions.component';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 const materialModules = [
   MatSidenavModule,
   MatToolbarModule,
@@ -22,7 +29,12 @@ const materialModules = [
   MatIconModule,
   MatCardModule,
   MatButtonModule,
-  MatBottomSheetModule
+  MatBottomSheetModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatSelectModule,
+  MatDatepickerModule,
+  MatNativeDateModule
 ];
 @NgModule({
   declarations: [
@@ -36,7 +48,8 @@ const materialModules = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ...materialModules
+    ...materialModules,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
