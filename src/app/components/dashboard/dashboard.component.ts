@@ -25,7 +25,7 @@ export class DashboardComponent implements OnInit {
 
   showInbox(): void {
     const dlg = this.dialogService.open(ListComponent, {
-      disableClose: true
+      disableClose: false
     });
     dlg.afterClosed().subscribe(_ => this.router.navigate(['dashboard']));
     // means the same
